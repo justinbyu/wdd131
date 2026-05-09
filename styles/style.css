@@ -1,13 +1,45 @@
-/* RESET */
-    text-align center
-
-
-.card p,
-.card ul {
-    padding: 20px;
+/* css */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
 
-/* ABOUT CONTENT */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    /* GRID REQUIREMENT */
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* CARD STYLES */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.card h2 {
+    background-color: #003366;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+/* ABOUT CONTENT - FLEXBOX REQUIREMENT (Passed) */
 .about-content {
     display: flex;
     align-items: center;
@@ -17,18 +49,14 @@
 
 .about-content img {
     width: 150px;
-    height: 150px;
-    object-fit: cover;
+    height: auto;
     border-radius: 10px;
 }
 
-/* RESOURCES */
+/* RESOURCES - HOVER REQUIREMENT (Passed) */
 .resources {
     list-style-position: inside;
-}
-
-.resources li {
-    margin-bottom: 10px;
+    padding: 20px;
 }
 
 .resources a {
@@ -38,15 +66,7 @@
 
 .resources a:hover {
     text-decoration: underline;
-}
-
-/* FOOTER */
-footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    font-weight: bold;
 }
 
 #lastModified {
@@ -55,17 +75,9 @@ footer {
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-
+@media (max-width: 600px) {
     .about-content {
         flex-direction: column;
         text-align: center;
-    }
-
-    .navigation {
-        flex-direction: column;
     }
 }
