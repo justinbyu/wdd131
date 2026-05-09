@@ -1,11 +1,21 @@
 <!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>WDD 131 - Dynamic Web Fundamentals - Justin Diaz</title>
+    
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals course assignment portal for Justin Diaz. Highlights web development skills and resources.">
+    <meta name="author" content="Justin Diaz">
+    
+    <link rel="stylesheet" href="styles/style.css">
+</head>
 <body>
 
-    <!-- HEADER -->
     <header>
         <h1>
-            WDD 131 - Dynamic Web Fundamentals -
-            <span class="highlight">Your Name</span>
+            <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span> - Justin Diaz
         </h1>
 
         <nav>
@@ -14,35 +24,27 @@
                 <li><a href="https://byui.instructure.com" target="_blank">Canvas</a></li>
                 <li><a href="https://www.churchofjesuschrist.org" target="_blank">Scripture</a></li>
                 <li><a href="#">Final Project</a></li>
-                 <link rel="stylesheet" href="css/style.css">
             </ul>
         </nav>
     </header>
 
-    <!-- MAIN CONTENT -->
     <main>
-
-        <!-- ABOUT ME SECTION -->
         <section class="card">
             <h2>About Me</h2>
-
             <div class="about-content">
                 <div>
                     <p>
                         Hello! My name is Justin Diaz. I am currently studying web development.
-                        I enjoy learning HTML, CSS, and JavaScript. I also love playing basketball and vedio games,
+                        I enjoy learning HTML, CSS, and JavaScript. I also love playing basketball and video games,
                         technology, and creating websites.
                     </p>
                 </div>
-
-                <img src="images/profile.jpg" alt="Profile Picture">
+                <img src="images/profile.jpg" alt="Justin Diaz Profile Picture">
             </div>
         </section>
 
-        <!-- RESOURCES SECTION -->
         <section class="card">
             <h2>Web Dev Resources</h2>
-
             <ul class="resources">
                 <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
                 <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
@@ -50,16 +52,14 @@
                 <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
             </ul>
         </section>
-
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <p>
-            © <span id="currentyear"></span> | Your Name | Philippines
+            © <span id="currentyear"></span> | Justin Diaz | Philippines
         </p>
-
         <p id="lastModified"></p>
+        <script src="scripts/getdates.js"></script>
     </footer>
 
 </body>
