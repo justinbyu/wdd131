@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A responsive gallery displaying beautiful temples with mobile-first layout.">
+    <link rel="stylesheet" href="styles/temple.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Temple Album</h1>
+            <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        
+        <div class="gallery-grid">
+            <figure>
+                <img src="images/cebutemple.jpg" alt=" Cebu City Philippines Temple" width="600" height="400" loading="lazy">
+                <figcaption>Cebu Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/urdanetatemple.jpg" alt="Urdaneta Temple surrounded by green trees" width="600" height="400" loading="lazy">
+                <figcaption>Urdaneta Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://picsum.photos/id/1022/600/400" alt="San Diego California Temple majestic front architecture" width="600" height="400" loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://picsum.photos/id/1022/600/400" alt="San Diego California Temple view from the garden" width="600" height="400" loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://picsum.photos/id/1022/600/400" alt="San Diego California Temple bright daytime setting" width="600" height="400" loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://picsum.photos/id/1022/600/400" alt="San Diego California Temple architectural spires details" width="600" height="400" loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Temple Album Project</p>
+        <p class="last-modified">Last Modified: <span id="last-modified-date"></span></p>
+    </footer>
+
+</body>
+</html>
