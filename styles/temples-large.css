@@ -1,30 +1,37 @@
-/* Hide the hamburger icon button */
-#menu-toggle {
-    display: none;
-}
+/* ==========================================
+   DESKTOP VIEW STYLES
+   ========================================== */
+@media (min-width: 768px) {
 
-/* Force show the navbar inline horizontally */
-#nav-menu {
-    display: block !important;
-    background-color: transparent;
-}
+    /* Hide the hamburger icon button */
+    #menu-toggle {
+        display: none;
+    }
 
-#nav-menu ul {
-    flex-direction: row;
-    justify-content: flex-end;
-    padding-right: 1rem;
-}
+    /* Force show the navbar inline horizontally */
+    #nav-menu {
+        display: block !important;
+        background-color: transparent;
+    }
 
-#nav-menu a {
-    padding: 0.75rem 1.2rem;
-}
+    #nav-menu ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 1rem;
+    }
 
-.header-container {
-    padding-bottom: 0.5rem;
-}
+    #nav-menu a {
+        padding: 0.75rem 1.2rem;
+    }
 
-/* Desktop View Grid Layout: 3 Columns */
-.gallery-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    .header-container {
+        padding-bottom: 0.5rem;
+    }
+
+    /* Desktop View Grid Layout: 3 Columns */
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
 }
