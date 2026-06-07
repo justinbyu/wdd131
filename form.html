@@ -17,63 +17,57 @@
     <main>
         <form method="get" action="review.html">
             
-            <label id="product-label" for="product-name">Product Name</label>
-            <select id="product-name" name="product-name" required>
-                <option value="" disabled selected>Choose a Product...</option>
-                <option value="flux">Flux Capacitor</option>
-                <option value="laces">Power Laces</option>
-                <option value="hover">Hoverboard</option>
-            </select>
+            <div class="form-group">
+                <label for="product">Product Name</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                    <option value="fc">Flux Capacitor</option>
+                    <option value="pl">Power Laces</option>
+                    <option value="ts">Time Shield</option>
+                    <option value="wb">Wireless Beacon</option>
+                </select>
+            </div>
 
             <fieldset>
-                <legend>Overall Rating</legend>
+                <legend>Product Rating</legend>
                 <div class="rating-group">
-                    <input type="radio" id="rating-1" name="rating" value="1" required>
-                    <label for="rating-1">1 Star</label>
-
-                    <input type="radio" id="rating-2" name="rating" value="2">
-                    <label for="rating-2">2 Stars</label>
-
-                    <input type="radio" id="rating-3" name="rating" value="3">
-                    <label for="rating-3">3 Stars</label>
-
-                    <input type="radio" id="rating-4" name="rating" value="4">
-                    <label for="rating-4">4 Stars</label>
-
-                    <input type="radio" id="rating-5" name="rating" value="5">
-                    <label for="rating-5">5 Stars</label>
+                    <label><input type="radio" id="rating1" name="rating" value="1" required> 1</label>
+                    <label><input type="radio" id="rating2" name="rating" value="2" required> 2</label>
+                    <label><input type="radio" id="rating3" name="rating" value="3" required> 3</label>
+                    <label><input type="radio" id="rating4" name="rating" value="4" required> 4</label>
+                    <label><input type="radio" id="rating5" name="rating" value="5" required> 5</label>
                 </div>
             </fieldset>
 
-            <label for="install-date">Date of Installation</label>
-            <input type="date" id="install-date" name="install-date" required>
+            <div class="form-group">
+                <label for="install-date">Date of Installation</label>
+                <input type="date" id="install-date" name="install-date" required>
+            </div>
 
             <fieldset>
-                <legend>Features Useful to You</legend>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="feature-design" name="features" value="design">
-                    <label for="feature-design">Sleek Design</label>
-
-                    <input type="checkbox" id="feature-durability" name="features" value="durability">
-                    <label for="feature-durability">Durability</label>
-
-                    <input type="checkbox" id="feature-performance" name="features" value="performance">
-                    <label for="feature-performance">High Performance</label>
-
-                    <input type="checkbox" id="feature-ui" name="features" value="ui">
-                    <label for="feature-ui">Easy UI</label>
-                </div>
+                <legend>Which features did you find useful?</legend>
+                <label><input type="checkbox" name="features" value="durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="design"> Design</label>
+                <label><input type="checkbox" name="features" value="performance"> Performance</label>
+                <label><input type="checkbox" name="features" value="ease"> Ease of Use</label>
             </fieldset>
 
-            <label for="review-comments">Written Review (Optional)</label>
-            <textarea id="review-comments" name="review-comments" rows="5" placeholder="Share your experience with this product..."></textarea>
+            <div class="form-group">
+                <label for="review">Written Review (Optional)</label>
+                <textarea id="review" name="review" rows="4" cols="50" placeholder="Tell us about your experience..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Your Name (Optional)</label>
+                <input type="text" id="username" name="username">
+            </div>
 
             <button type="submit">Submit Review</button>
         </form>
     </main>
 
     <footer>
-        <p>&copy; 2026 Justin Diaz | BYU-Idaho</p>
+        <p>&copy; 2026 | Justin Diaz | BYU-Idaho</p>
     </footer>
 </body>
 </html>
