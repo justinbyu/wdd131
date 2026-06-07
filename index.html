@@ -3,61 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project Title</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/project.js" defer></script>
+    <title>EcoTrails Explorer | Sustainable Hiking Hub</title>
+    <meta name="description" content="Discover regional sustainable hiking trails, detailed eco-tips, and actionable checklists for outdoor enthusiasts matching Justin Diaz's project design.">
+    <meta name="author" content="Justin Diaz">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/project.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Project Topic Title</h1>
+        <div class="logo">EcoTrails Explorer</div>
         <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
         <nav id="main-nav">
             <a href="index.html" class="active">Home</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="join.html">Get Involved</a>
+            <a href="gallery.html">Trail Gallery</a>
+            <a href="join.html">Join Explorer Club</a>
         </nav>
     </header>
 
     <main>
         <section id="hero">
-            <h2>Welcome to the Project</h2>
-            <p>This site serves a specific target audience and purpose outlined in the site plan.</p>
+            <div class="hero-content">
+                <h2>Explore the Outdoors with Zero Footprint</h2>
+                <p>Your curated hub for regional sustainable hiking trails, eco-friendly checklists, and active trail preservation.</p>
+                <a href="#form-section" class="cta-btn">Get the Gear Checklist</a>
+            </div>
         </section>
 
         <section id="featured-content">
-            <h3>Featured Content</h3>
-            <picture>
-                <img src="images/placeholder-low.jpg" data-src="images/optimized-hero.jpg" alt="Description of optimized image" loading="lazy" class="lazy-img">
-            </picture>
+            <h3>Featured Eco-Tips & Trails</h3>
             <div id="dynamic-cards">
                 </div>
         </section>
 
         <section id="form-section">
-            <h3>Feedback & Inquiries</h3>
+            <h3>Join the EcoTrails Movement</h3>
             <form id="project-form" action="thanks.html" method="get">
-                <label biographies-label for="user-name">Name:</label>
-                <input type="text" id="user-name" name="userName" required>
+                <label for="user-name">Your Name:</label>
+                <input type="text" id="user-name" name="userName" required placeholder="Enter full name">
 
-                <label for="user-email">Email:</label>
-                <input type="email" id="user-email" name="userEmail" required>
+                <label for="user-email">Email Address:</label>
+                <input type="email" id="user-email" name="userEmail" required placeholder="name@domain.com">
 
-                <label for="interest-select">Topic of Interest:</label>
+                <label for="interest-select">Your Next Hiking Goal:</label>
                 <select id="interest-select" name="interest" required>
-                    <option value="" disabled selected>Select an option...</option>
-                    <option value="web-dev">Web Development</option>
-                    <option value="design">UI/UX Design</option>
-                    <option value="other">Other</option>
+                    <option value="" disabled selected>Choose your primary focus...</option>
+                    <option value="beginner">Beginner Friendly Eco-Trails</option>
+                    <option value="checklist">Sustainable Gear Checklists</option>
+                    <option value="volunteer">Trail Preservation Volunteer</option>
                 </select>
 
-                <button type="submit">Submit</button>
+                <button type="submit">Access Member Resources</button>
             </form>
             <p id="visit-counter"></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="current-year"></span> | Your Name | BYU-Idaho</p>
+        <p>&copy; <span id="current-year"></span> | Justin Diaz | BYU-Idaho | EcoTrails Explorer Project</p>
         <p>Last Modified: <span id="last-modified"></span></p>
         <p><a href="references.html">References Page</a></p>
     </footer>

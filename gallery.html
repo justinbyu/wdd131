@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trail Gallery | EcoTrails Explorer</title>
+    <meta name="description" content="Explore regional sustainable hiking trails featuring optimized imagery and eco-friendly trail ratings curated by Justin Diaz.">
+    <meta name="author" content="Justin Diaz">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">EcoTrails Explorer</div>
+        <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="gallery.html" class="active">Trail Gallery</a>
+            <a href="join.html">Join Explorer Club</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-intro">
+            <h2>Eco-Friendly Trail Registry</h2>
+            <p>Carefully mapped paths selected for their low ecological impact, beautiful scenery, and community preservation efforts.</p>
+        </section>
+
+        <section class="gallery-grid">
+            <div class="gallery-card">
+                <picture>
+                    <img src="images/placeholder-low.png" data-src="images/trail-whispering-pines.jpg" alt="Scenic pathway through tall green pine trees" loading="lazy">
+                </picture>
+                <div class="gallery-info">
+                    <h3>Whispering Pines Loop</h3>
+                    <p><strong>Distance:</strong> 4.2 Miles | <strong>Difficulty:</strong> Easy</p>
+                    <p>Features restricted walking zones to shield native root systems from degradation.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <picture>
+                    <img src="images/jj.png" data-src="images/trail-rocky-ridge.jpg" alt="Rocky mountainside trail overlooking a valley" loading="lazy">
+                </picture>
+                <div class="gallery-info">
+                    <h3>Rocky Ridge Summit</h3>
+                    <p><strong>Distance:</strong> 6.8 Miles | <strong>Difficulty:</strong> Hard</p>
+                    <p>Strict pack-in pack-out regulations maintain pristine conditions above the tree line.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <picture>
+                    <img src="images/place.png" data-src="images/trail-hidden-falls.jpg" alt="Clear rushing waterfall surrounded by lush ferns" loading="lazy">
+                </picture>
+                <div class="gallery-info">
+                    <h3>Hidden Falls Sanctuary</h3>
+                    <p><strong>Distance:</strong> 2.5 Miles | <strong>Difficulty:</strong> Moderate</p>
+                    <p>Features boardwalk setups built entirely out of recycled materials to cross delicate wetlands.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Justin Diaz | BYU-Idaho | EcoTrails Explorer Project</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p><a href="references.html">References Page</a></p>
+    </footer>
+</body>
+</html>

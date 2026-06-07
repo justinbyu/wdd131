@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Club | EcoTrails Explorer</title>
+    <meta name="description" content="Sign up for the EcoTrails Explorer Club to receive custom gear checklists and sustainable trail guides by Justin Diaz.">
+    <meta name="author" content="Justin Diaz">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">EcoTrails Explorer</div>
+        <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Trail Gallery</a>
+            <a href="join.html" class="active">Join Explorer Club</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-intro">
+            <h2>Join the Explorer Community</h2>
+            <p>Get immediate access to regional maps, community events, and printable sustainable hiking checklists.</p>
+        </section>
+
+        <section class="form-container-box">
+            <form id="explorer-signup-form" action="thanks.html" method="get">
+                <fieldset>
+                    <legend>Personal Explorer Profile</legend>
+                    
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="firstName" required autocomplete="given-name">
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="lastName" required autocomplete="family-name">
+
+                    <label for="explorer-email">Email Address:</label>
+                    <input type="email" id="explorer-email" name="explorerEmail" required autocomplete="email" placeholder="example@email.com">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Hiking Background</legend>
+                    
+                    <label for="experience-level">Hiking Experience Level:</label>
+                    <select id="experience-level" name="experience" required>
+                        <option value="" disabled selected>Select your current tier...</option>
+                        <option value="beginner">Beginner (Looking for flat, simple trails)</option>
+                        <option value="intermediate">Intermediate (Comfortable with elevation change)</option>
+                        <option value="expert">Expert (Can handle backcountry orientation)</option>
+                    </select>
+
+                    <label for="user-comments">Main Conservation Interest:</label>
+                    <textarea id="user-comments" name="userComments" rows="4" placeholder="Tell us what eco-friendly trail habits matter most to you..."></textarea>
+                </fieldset>
+
+                <button type="submit">Submit Membership Application</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Justin Diaz | BYU-Idaho | EcoTrails Explorer Project</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p><a href="references.html">References Page</a></p>
+    </footer>
+</body>
+</html>
