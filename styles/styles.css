@@ -1,0 +1,126 @@
+/* Custom variables for quick styling adjustments */
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #e9ecef;
+    --text-color: #333;
+    --accent-color: #ffc107;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    display: none; /* Hide for mobile dropdown by default */
+    flex-direction: column;
+    width: 100%;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    padding: 0.8rem;
+    text-decoration: none;
+}
+
+main {
+    padding: 1.5rem;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 400px;
+    margin-top: 1rem;
+}
+
+input, select, button {
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Card layout grid setup */
+#dynamic-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--accent-color);
+}
+
+/* Tablet & Desktop Adjustments (Responsive Media Queries) */
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none; /* Hide toggle on desktop */
+    }
+
+    header {
+        flex-direction: row;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        gap: 1rem;
+    }
+
+    #dynamic-cards {
+        grid-template-columns: repeat(3, 1fr); /* 3 column layout on wide screens */
+    }
+}
